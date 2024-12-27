@@ -27,6 +27,7 @@ The next flip-flop need only “recognize” that the first flip-flop’s Q outp
 However, the remaining flip-flops should be made ready to toggle only when all lower-order output bits are “high,” thus the need for AND gates.
 
 **Procedure**
+
 1.Initialize the shift register to a known state (e.g., all zeros).
 
 2.Input a bit serially into the shift register.
@@ -38,6 +39,7 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 5.Repeat steps 2-4 for each bit you want to input and shift.
 
 **PROGRAM**
+```
 module ex11(out,clk,rstn);
 input clk,rstn;
 output reg [3:0]out;
@@ -49,18 +51,19 @@ begin
      out <= out+1;
 end
 endmodule
-
+```
 Developed by: B. MONISH KUMAR RegisterNumber:24005813
-*/
+
 
 **RTL LOGIC UP COUNTER**
 ![image](https://github.com/user-attachments/assets/ce206723-1af0-4b66-89aa-2d7a7b67679c)
 
-**TIMING DIAGRAM FOR IP COUNTER**
+**TIMING DIAGRAM FOR UP COUNTER**
 ![image](https://github.com/user-attachments/assets/1da1d7f0-853b-44c8-90d4-f16a6923c583)
 
 **TRUTH TABLE**
-![image](https://github.com/user-attachments/assets/da338bcb-dbf5-4084-a3fa-fb515d8c7df4)
+
+![WhatsApp Image 2024-12-20 at 13 54 29_a970e886](https://github.com/user-attachments/assets/75a04b2e-190e-409d-82bb-8c6b490e9e06)
 
 **RESULTS**
 Hence a 4 bit synchronous up counter is implemented correctly
